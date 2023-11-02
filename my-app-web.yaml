@@ -10,16 +10,7 @@ spec:
   source:
     repoURL: https://github.com/azizkhanp/argoCD.git
     targetRevision: HEAD
-    path: environments/staging/my-app
+    path: my-app
   destination:
     server: https://34.125.105.180
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-      allowEmpty: false
-    syncOptions:
-    - Validate=true
-    - CreateNamespace=false
-    - PrunePropagationPolicy=foreground
-    - PruneLast=true
+  
